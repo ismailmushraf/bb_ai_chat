@@ -9,8 +9,6 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -29,11 +27,13 @@ body {
 #chat {
     border: 1px solid #ddd;
     padding: 10px;
-    height: 200px; /* Allow chat to fill available space */
+    min-height: 200px; /* Allow chat to fill available space */
+    height: 95%;
     overflow-y: auto; /* Enable vertical scrolling */
     margin-bottom: 10px;
     border-radius: 4px;
     background-color: #fafafa;
+    width: 95%;
 }
 
 .message {

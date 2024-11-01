@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohere API Chatbot</title>
+    <link rel="icon" href="bb_ai_logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="bb_ai_logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="bb_ai_logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="bb_ai_logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="bb_ai_logo.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="toggleSidebar" class="hidden">☰</button> <!-- Sidebar toggle button -->
+    <div id="sidebar" class="hidden">
+        <button id="newChatButton">New Chat</button>
+        <div id="chatList"></div>
+        <div class="hidden" id="signoutBtn" style="margin-top: 4px;">
+            <button onclick="logout()">Sign out</button>
+        </div>
+    </div>
+    <div class="container hidden">
+        <h1><center>BB AI Chat</center></h1>
+        <h2 id="welcomeMessage"></h2> <!-- Welcome message -->
+        <div id="chat-container">
+            <div id="chat"></div>
+            <form id="chatForm">
+                <input type="text" id="prompt" placeholder="Type your message here" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

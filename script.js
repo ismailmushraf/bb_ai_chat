@@ -14,7 +14,6 @@ window.onload = function () {
 };
 
 function initializeChat() {
-    document.getElementById('welcomeMessage').textContent = 'Welcome ' + username + '!';
 
     // Remove the 'hidden' class to show the chat elements
     document.getElementById('toggleSidebar').classList.remove('hidden');
@@ -144,6 +143,7 @@ function loadChat(chatId) {
     currentChatId = chatId;
     const chat = chatSessions.find(function (c) { return c.id === chatId; });
     if (chat) {
+        document.getElementById('welcomeMessage').textContent = 'Topic: ' + chat.name + '!';
         const chatBox = document.getElementById('chat');
         chatBox.innerHTML = '';
         chat.messages.forEach(function (message) {

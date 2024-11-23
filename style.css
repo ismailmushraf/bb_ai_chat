@@ -6,6 +6,7 @@ body {
     height: 100vh; /* Set the body to take full height */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
+    height: 100vh;
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
     flex-grow: 1; /* Allow the container to grow */
     display: flex;
     flex-direction: column; /* Stack children vertically */
+    min-height: 100%;
 }
 
 #chat-container {
@@ -76,7 +78,7 @@ button:hover {
 #chatForm {
     display: flex;
     flex-direction: row;
-
+    min-height: 50px;
 }
 
 #toggleSidebar {
